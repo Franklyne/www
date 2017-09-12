@@ -12,7 +12,6 @@ body {
   background: white;
   margin: 0;
   padding: 0;
-
 }
 
 header {
@@ -29,15 +28,14 @@ header {
 .flex-container {
     display: -webkit-flex;
     display: flex;
-
     width: 100%;
-    height: 150px;
+    height: 100px;
     background-color: white;
 }
 
 .flex-item-logo{
     background-color: white;
-    align-self: center;
+    align-self: flex-end;
     width: 400px;
     height: 100px;
     margin: 0px;
@@ -45,14 +43,17 @@ header {
 
 .flex-item-menu{
         background-color: white;
-        align-self: center;
+        -webkit-align-self: flex-end;
+        align-self: flex-end;
         width: 100%;
         height: 100px;
-        margin: 0px; }
+        margin: 0px;
+        flex-grow: 1}
 
 .profile-img {
       min-height: 150px;
       min-width: 150px;
+      max-width: 1000px;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
@@ -80,29 +81,36 @@ ul {
   list-style-type: none;
   background: white;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: black;
-  }
+  color: black;}
 
-  li {
-      float: left;
-  }
+li {
+  float: left;}
 
-  li a {
-      display: block;
-      padding: 14px 16px;
-      background-color: white;
-      text-align: center;
-      text-decoration: none;
-      color: black;
-  }
+li a {
+  display: block;
+  padding: 0;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: bottom;
+  padding: 4px 5px;
+  color: black;}
 
-  li a:hover:not(.active) {
-    text-decoration: underline;
-    /*background-color: #b3d4fc; */}
+li a:hover:not(.active) {
+  text-decoration: underline;
+  /*background-color: #b3d4fc; */}
+
+footer li a {
+    display: block;
+    padding: 14px 16px;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    color: black;}
 
 h1 {
   margin: 0;
-  padding-top: 10px;
+  padding-top: 0px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 35px;
 }
