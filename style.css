@@ -17,7 +17,6 @@ body {
 header {
   flex: 0 0 75px;
   display: flex; /* flex container with flex items: Title and eventual menu */
-  -webkit-align-items: center;
   align-items: center;
   flex-direction: row;
   padding: 10px;
@@ -38,7 +37,6 @@ footer {
   flex: 0 0 75px;
   display: flex; /*flex container with social links */
   flex-direction: row;
-  -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 0px;
   color: black;
@@ -48,7 +46,7 @@ footer {
 
 h1 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .profile-img {
